@@ -1,0 +1,65 @@
+/* CSS files add styling rules to your content */
+
+body{
+  font-family: 'Montserrat', sans-serif;
+    writing-mode: vertical-lr;
+}
+
+.container {
+  text-align: center;
+}
+
+img{
+  width: 300px; 
+  height: 600px;
+}
+
+#logo{
+    position: absolute;
+    top: 180px;
+    left:133px;
+}
+
+.parent{
+    width:200px;
+    height:200px;
+    border:1px solid red;
+    position:relative;
+}
+
+#logo2{
+    position: absolute;
+    top: 180px;
+    left:537px;
+}
+
+#logo3{
+    position: absolute;
+    top: 180px;
+    left:941px;
+}
+
+#logo4{
+    position: absolute;
+    top: 180px;
+    left:1345px;
+}
+
+#logo5{
+    position: absolute;
+    top: 180px;
+    left:1749px;
+}
+
+#logo6{
+    position: absolute;
+    top: 180px;
+    left:2153px;
+}
+
+#logo7{
+    position: absolute;
+    top: 180px;
+    left:2557px;
+}
+

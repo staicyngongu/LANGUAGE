@@ -1,0 +1,272 @@
+html, body, #fullheight{
+    background-color: #F0DFB8;
+    margin: 0;
+    padding: 0;
+    min-height: 10vh;
+}
+.theTitle{
+    display: flex;
+    align-items: center;
+    height: 120px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+}
+
+
+.right, .left{
+    width: 50%;
+    overflow: hidden;
+}
+.theTitle h1{
+    margin: 0;
+    height: 120px;
+    line-height: 120px;
+    vertical-align: middle;
+    font-family: Tahoma;
+    font-weight: 900;
+    font-size: 50px;
+    color: #333;
+    transform: translateX(100%);
+    transition: transform 0.6s ease-out .1s;
+}
+
+.theTitle .separator{
+    background-color: #fff;
+    width: 4px;
+    transform: rotate(90deg);
+    height: 0;
+    display: block;
+    margin: 0 6px 0 0;
+    transition: height 0.3s ease 0.9s, transform 0.3s ease 0.6s;
+}
+
+.active .separator{
+    height: 100%;
+    transform: rotate(0);
+    transition: height 0.3s ease, transform 0.3s ease 0.4s;
+
+}
+
+/* text on both sides */ 
+
+.theTitle.active h1{
+    transform: translateX(0);
+    transition: transform 0.6s ease-out 0.8s;
+}
+.theTitle.active p{
+    transform: translateX(0);
+    transition: transform 0.5s ease-out 0.7s;
+}
+.theTitle .right{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+.theTitle p{
+    margin: 0;
+    padding: 0;
+    font-family: Calibri;
+    font-size: 2.8rem;
+    line-height: 0.8;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #333;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-out;
+}
+
+.toggleClass{
+    background: none;
+    border: none;
+    border: 2px solid #333;
+    font-size: 2rem;
+    font-family: Calibri;
+    font-weight: 100;
+    font-size:16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+}
+.toggleClass:hover{
+    background-color: #333;
+    color: #fff;
+}
+.toggleClass:active{
+    background-color: #2a2a2a;
+}
+
+
+section {
+	border-bottom: 1px ;
+	padding: 1rem;
+	height: 50vh;
+	scroll-snap-align: start;
+	text-align: center;
+	position: relative;
+}
+
+/* FIRST SECTION  */ 
+
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 600;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
+.container {
+  width: 200px;
+}
+
+.word {
+  font-size:3em;
+  color: white;
+  font-weight:bold;
+  float:left;
+  opacity:0;
+  position:absolute;
+  top:40%;
+  left:40%;
+}
+
+
+/* individual words style */ 
+
+.w1 {
+  animation: w1anim 20s infinite;
+}
+
+.w2 {
+  animation: w2anim 20s infinite;
+  top:40%;
+  left:50%;
+}
+
+.w3 {
+  animation: w3anim 20s infinite;
+  top:40%;
+  left:50%;
+}
+
+.w4 {
+  animation: w4anim 20s infinite;
+}
+
+.w5 {
+  animation: w5anim 20s infinite;
+}
+
+/* opacity ketframes */ 
+
+@keyframes w1anim {
+  0%{
+    opacity: 0;
+  }
+  10%{
+    opacity: 1;
+  }
+  30% {
+    opacity:0;
+  }
+}
+
+
+@keyframes w2anim {
+  20%{
+    opacity: 0;
+  }
+  30%{
+    opacity: 1;
+  }
+  40% {
+    opacity:0;
+  }
+}
+
+@keyframes w3anim {
+  40%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  60% {
+    opacity:0;
+  }
+}
+
+@keyframes w4anim {
+  60%{
+    opacity: 0;
+  }
+  70%{
+    opacity: 1;
+  }
+  80% {
+    opacity:0;
+  }
+}
+
+@keyframes w5anim {
+  80%{
+    opacity: 0;
+  }
+  90%{
+    opacity: 1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+img{
+  width:50%;
+  height:auto;
+}
+
+.blackhand{
+  width:25%;
+  height:auto;
+  transform: rotate(40deg);
+  position:absolute;
+  left:-30px;
+}
+
+.leftdown{
+  width:30%;
+  height:auto;
+  transform: rotate(40deg);
+  position:absolute;
+  left:-30px;
+  top:-1800px;
+}
+
+.righttop{
+  width:25%;
+  height:auto;
+  transform: rotate(40deg);
+  position:absolute;
+  left:-30px;
+}
+
+.righttop2{
+  width:25%;
+  height:auto;
+  transform: rotate(40deg);
+  position:absolute;
+  left:-30px;
+}
+
+footer{
+	clear: both;
+      position: relative;
+  display: table;
+  width: 100%;
+  text-align: center;
+      font-family: arial, helvetica;
+      }
